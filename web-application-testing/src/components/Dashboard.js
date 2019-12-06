@@ -1,10 +1,13 @@
 import React from 'react';
 
-function Dashboard() {
+function Dashboard(props) {
 
 return(
     <div>
-    <h1>Dashboard</h1>
+    <button onClick={props.addBall}> Ball </button> 
+    <button onClick={props.addStrike}> Strike </button> 
+    <button onClick={props.addFoul}> Foul </button> 
+    <button onClick={props.addHit}> Hit </button> 
     </div>
 )
 
